@@ -1,116 +1,115 @@
+
 <!DOCTYPE html>
 <html lang="es">
-<head>
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id=GTM-N48HC3N7'+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-N48HC3N7');</script>
-<!-- End Google Tag Manager -->
-
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-NKJ6843908"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-NKJ6843908');
-</script>
-
+<head><!-- Google Tag Manager -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Donaciones Solidarias Rafael</title>
 
 <style>
-*{box-sizing:border-box}
-body{margin:0;font-family:Arial,sans-serif;background:linear-gradient(180deg,#fff7ed,#ecfdf5,#eff6ff);color:#1f2937}
-.hero{min-height:90vh;background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),url("https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=1600&q=80");background-size:cover;background-position:center;display:flex;align-items:center;justify-content:center;text-align:center;color:white;padding:30px}
-.hero h1{font-size:64px;margin:0;text-shadow:2px 2px 10px #000}
-.hero p{font-size:24px;max-width:850px;margin:20px auto}
-.btn{display:inline-block;background:#facc15;color:#111;padding:16px 32px;border-radius:50px;text-decoration:none;font-weight:bold;margin:10px;box-shadow:0 6px 15px rgba(0,0,0,.25)}
-.btn.green{background:#22c55e;color:white}
-.btn.red{background:#ef4444;color:white}
-section{max-width:1200px;margin:auto;padding:45px 20px}
-.card{background:white;border-radius:25px;padding:32px;margin:25px 0;box-shadow:0 10px 30px rgba(0,0,0,.13)}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:25px}
-img{width:100%;height:240px;object-fit:cover;border-radius:20px}
-h2{font-size:36px;color:#15803d}
-h3{color:#b45309}
-.color{background:linear-gradient(135deg,#16a34a,#0ea5e9);color:white}
-.bank{background:#fff7cc;border:3px solid #facc15}
-.comment{background:#fef3c7;border-left:7px solid #f59e0b}
-footer{background:#111827;color:white;text-align:center;padding:35px}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial,sans-serif;background:#f7fff7;color:#123}
+nav{position:fixed;top:0;width:100%;background:white;padding:15px 8%;display:flex;justify-content:space-between;align-items:center;z-index:999;box-shadow:0 5px 20px #0002}
+.logo{font-size:24px;font-weight:bold;color:#087c35}
+nav a{margin:0 10px;text-decoration:none;color:#123;font-weight:bold}
+.btn{background:#49b829;color:white!important;padding:14px 25px;border-radius:40px;text-decoration:none;font-weight:bold}
+.hero{min-height:90vh;background:linear-gradient(90deg,#003b1b,#0b7a35cc),url('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c') center/cover;color:white;display:flex;align-items:center;padding:120px 8% 60px}
+.hero h1{font-size:55px;max-width:750px}
+.hero p{font-size:22px;margin:20px 0;max-width:650px}
+section{padding:70px 8%;text-align:center}
+h2{font-size:38px;margin-bottom:20px;color:#064d25}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:25px;margin-top:35px}
+.card{background:white;padding:25px;border-radius:22px;box-shadow:0 10px 30px #0002;transition:.3s}
+.card:hover{transform:translateY(-8px)}
+.card img{width:100%;height:190px;object-fit:cover;border-radius:18px;margin-bottom:15px}
+.stat{font-size:42px;color:#169b45;font-weight:bold}
+.donar{background:linear-gradient(135deg,#064d25,#23b14d);color:white;border-radius:30px;padding:50px}
+.donar h2{color:white}
+.amounts span{display:inline-block;background:white;color:#064d25;padding:18px 30px;margin:10px;border-radius:15px;font-weight:bold}
+.bank{background:white;color:#111;padding:25px;border-radius:20px;margin-top:25px}
+.float{position:fixed;bottom:25px;right:25px;background:#ffd21f;color:#063b17;padding:18px 28px;border-radius:50px;font-weight:bold;box-shadow:0 10px 30px #0005;z-index:999;animation:pulse 1.5s infinite}
+@keyframes pulse{50%{transform:scale(1.08)}}
+footer{background:#032b13;color:white;padding:40px;text-align:center}
+@media(max-width:700px){.hero h1{font-size:35px}nav{flex-direction:column}.hero{padding-top:170px}}
 </style>
 </head>
 
-<body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N48HC3N7"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<body><!-- Google Tag Manager (noscript) -->
+
+<nav>
+<div class="logo">💚 Donaciones Solidarias</div>
+<div>
+<a href="#mision">Misión</a>
+<a href="#historias">Historias</a>
+<a href="#donar" class="btn">DONA AHORA</a>
+</div>
+</nav>
 
 <div class="hero">
 <div>
-<h1>Donaciones Solidarias</h1>
-<p>Ayuda real para familias, niños, madres, padres y animales que necesitan esperanza.</p>
-<a class="btn green" href="https://wa.me/34671927408">Contactar por WhatsApp</a>
-<a class="btn" href="#donar">Quiero ayudar ahora</a>
+<h1>Ayuda Solidaria para Familias, Niños y Animales</h1>
+<p>Con 1€, 2,50€, 5€ o cualquier cantidad puedes llevar comida, esperanza y amor a quienes más lo necesitan.</p>
+<a href="#donar" class="btn">❤️ DONA AHORA</a>
 </div>
 </div>
+
+<section id="mision">
+<h2>Nuestra misión</h2>
+<p>Queremos apoyar a familias necesitadas, niños en situación difícil y animales abandonados.</p>
+
+<div class="cards">
+<div class="card"><div class="stat">350.000+</div><p>Familias que queremos alcanzar</p></div>
+<div class="card"><div class="stat">1.000.000+</div><p>Animales que queremos ayudar</p></div>
+<div class="card"><div class="stat">100%</div><p>Compromiso y transparencia</p></div>
+</div>
+</section>
 
 <section>
-
-<div class="card color">
-<h2 style="color:white">Hola, soy Rafael</h2>
-<p>Estoy aquí con un propósito: ayudar a familias, niños, madres, padres y animales callejeros que están pasando momentos difíciles.</p>
-<p>Con una pequeña ayuda podemos llevar esperanza, comida, apoyo y cariño a quienes más lo necesitan.</p>
+<h2>¿En qué ayudamos?</h2>
+<div class="cards">
+<div class="card"><img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c"><h3>🍽️ Alimentación</h3><p>Comida para familias vulnerables.</p></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b"><h3>🐶 Rescate animal</h3><p>Ayuda para animales abandonados.</p></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1509062522246-3755977927d7"><h3>📚 Educación</h3><p>Apoyo para niños y jóvenes.</p></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b"><h3>❤️ Ayuda humana</h3><p>Esperanza para quien más lo necesita.</p></div>
 </div>
-
-<div class="grid">
-<div class="card"><img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=900&q=80"><h3>Niños con esperanza</h3><p>Cada niño merece una oportunidad y una sonrisa.</p></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&w=900&q=80"><h3>Familias necesitadas</h3><p>Apoyo para familias que pasan momentos difíciles.</p></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1599059813005-11265ba4b4ce?auto=format&fit=crop&w=900&q=80"><h3>Ayuda humanitaria</h3><p>Comida, ropa y productos básicos pueden cambiar un día.</p></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=900&q=80"><h3>Animales callejeros</h3><p>También queremos ayudar a animales sin hogar.</p></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?auto=format&fit=crop&w=900&q=80"><h3>Personas ayudando</h3><p>Cuando muchas manos se unen, el mundo cambia.</p></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1495556650867-99590cea3657?auto=format&fit=crop&w=900&q=80"><h3>Un mundo mejor</h3><p>La solidaridad puede cruzar fronteras.</p></div>
-</div>
-
-<div class="card">
-<h2>Transparencia</h2>
-<p>Las donaciones serán destinadas a necesidades básicas como alimentos, productos esenciales, apoyo familiar y ayuda a animales vulnerables.</p>
-<p>Este es un proyecto solidario creado por Rafael, con el deseo de crecer con honestidad, respeto y responsabilidad.</p>
-</div>
-
-<div class="card bank" id="donar">
-<h2>Datos para donaciones</h2>
-<p><strong>Puedes ayudar con:</strong> 0,50€ · 1€ · 2€ · 5€ · 7,50€ · 10€ · 12€ · 15€ o cualquier cantidad.</p>
-<p><strong>IBAN:</strong> ES88 0182 5778 0502 0160 0404</p>
-<p><strong>BIC/SWIFT:</strong> BBVAESMM</p>
-<a class="btn red" href="https://wa.me/34671927408">Avisar por WhatsApp</a>
-</div>
-
-<div class="card">
-<h2>Comentarios de apoyo</h2>
-<div class="comment"><p>“Cada pequeña ayuda puede cambiar una vida.”</p></div>
-<div class="comment"><p>“Juntos podemos construir un mundo más solidario.”</p></div>
-<div class="comment"><p>“Ayudar también es sembrar esperanza.”</p></div>
-<div class="comment"><p>“Un euro unido a otros puede alimentar esperanza.”</p></div>
-<div class="comment"><p>“Gracias por apoyar a familias y animales que necesitan una oportunidad.”</p></div>
-</div>
-
-<div class="card color">
-<h2 style="color:white">Contacto</h2>
-<p><strong>Email:</strong> vidabr7@outlook.com</p>
-<p><strong>WhatsApp:</strong> +34 671 927 408</p>
-<a class="btn" href="mailto:vidabr7@outlook.com">Enviar Email</a>
-<a class="btn green" href="https://wa.me/34671927408">Enviar WhatsApp</a>
-</div>
-
 </section>
+
+<section id="historias">
+<h2>Historias que inspiran</h2>
+<div class="cards">
+<div class="card"><h3>María y sus hijos</h3><p>Una pequeña ayuda puede llevar comida y esperanza a una familia.</p></div>
+<div class="card"><h3>Rocky</h3><p>Un animal abandonado puede tener una segunda oportunidad.</p></div>
+<div class="card"><h3>Juan</h3><p>Cada donación puede ayudar a un niño a estudiar y soñar.</p></div>
+</div>
+</section>
+
+<section id="donar">
+<div class="donar">
+<h2>Tú puedes ser la diferencia</h2>
+<p>Elige una cantidad y ayuda hoy.</p>
+
+<div class="amounts">
+<span>1€</span>
+<span>2,50€</span>
+<span>5€</span>
+<span>10€</span>
+<span>Otra cantidad</span>
+</div>
+
+<div class="bank">
+<h3>Datos para donación bancaria</h3>
+<p><b>Nombre:</b> Rafael Estevam</p>
+<p><b>IBAN:</b> ES88 0182 5778 0502 0160 0404</p>
+<p><b>BIC/SWIFT:</b> BBVAESMM</p>
+</div>
+</div>
+</section>
+
+<div class="float">❤️ DONA AHORA</div>
 
 <footer>
 <p>© 2026 Donaciones Solidarias Rafael</p>
-<p>Proyecto solidario creado para ayudar con amor, respeto y esperanza.</p>
+<p>Gracias por apoyar esta causa 💚</p>
 </footer>
 
 </body>
